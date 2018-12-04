@@ -17,3 +17,14 @@ npm run sass
 ```
 
 使用live-server启动浏览页面
+
+sass使用编程延迟实现动画
+
+```scss
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}
+```
+
